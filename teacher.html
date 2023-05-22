@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Teacher Page</title>
+</head>
+<body>
+  <h1>Teacher Page</h1>
+  
+  <form action="teacherInfo.php" method = "post">
+    <label for="hour">何時間目:</label>
+    <select id="hour" name="hour">
+      <option value="1">1時間目</option>
+      <option value="2">2時間目</option>
+      <option value="3">3時間目</option>
+      <option value="4">4時間目</option>
+      <option value="5">5時間目</option>
+      <option value="6">6時間目</option>
+    </select><br>
+    
+    <label for="subjectID">授業IDを入力してください</label>
+    <input type="subjectID" id="subjectID" name="subjectID" maxlength="4" required><br>
+    
+    
+    <label for="subjectID">教員IDを入力してください</label>
+    <input type="teacherID" id="teacherID" name="teacherID" maxlength="6" required><br>
+    
+    <input type="submit" value="起動">
+  </form>
+</body>
+</html>
